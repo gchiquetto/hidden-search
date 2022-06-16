@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  background-color: #B0D0D3; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+.search {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search--text {
+    padding: 2rem .8rem;
+    width: 30rem;
+    border: none;
+    background-color: #F2F4F3;
+    transition: all .8s;
+    display: inline;
+    border-radius: 2px; }
+    .search--text-hidden {
+      width: 0;
+      padding: 1.5rem; }
+    .search--text:focus {
+      outline: none;
+      box-shadow: 0 2px 2rem rgba(0, 0, 0, 0.4); }
+  .search--button {
+    position: relative;
+    border: none;
+    transform: translateX(-3rem);
+    background-color: #F2F4F3;
+    padding: 1.5rem;
+    box-shadow: 0 2px 2rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all .4s;
+    z-index: 2; }
+    .search--button-icon {
+      background-color: inherit;
+      width: 2rem;
+      height: 2rem; }
+    .search--button-clicked {
+      transform: translateX(-5rem);
+      box-shadow: none; }
